@@ -1,0 +1,47 @@
+{
+    "name": "stephanoff/phpcs-reporter-codeclimate",
+    "description": "CodeClimate reporter for the PHP CodeSniffer",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Stephanoff",
+            "email": "andrew.stephanoff@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "codeclimate/codeclimate-phpcodesniffer": "master"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHP_CodeSniffer\\Reports\\": "source/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "codeclimate/codeclimate-phpcodesniffer",
+                "version": "master",
+                "dist": {
+                    "url": "https://github.com/codeclimate/codeclimate-phpcodesniffer/archive/master.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "git@github.com:codeclimate/codeclimate-phpcodesniffer.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "classmap": [
+                        "./Sniffs.php"
+                    ]
+                }
+            }
+        }
+    ]
+}
