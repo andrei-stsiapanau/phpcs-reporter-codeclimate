@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5946ae5049cc77abb610eff99939b82",
+    "content-hash": "793d369d243305a55f1f3156abddc79f",
     "packages": [
         {
             "name": "codeclimate/codeclimate-phpcodesniffer",
-            "version": "dev",
+            "version": "master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:codeclimate/codeclimate-phpcodesniffer.git",
@@ -85,7 +85,7 @@
         {
             "alias": "0.1",
             "alias_normalized": "0.1.0.0",
-            "version": "dev-",
+            "version": "9999999-dev",
             "package": "codeclimate/codeclimate-phpcodesniffer"
         }
     ],
