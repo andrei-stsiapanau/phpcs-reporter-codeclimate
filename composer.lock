@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a82b7a4da2751e3781b5668dbb2095e2",
+    "content-hash": "b5946ae5049cc77abb610eff99939b82",
     "packages": [
         {
             "name": "codeclimate/codeclimate-phpcodesniffer",
-            "version": "0.1",
+            "version": "dev",
             "source": {
                 "type": "git",
                 "url": "git@github.com:codeclimate/codeclimate-phpcodesniffer.git",
@@ -24,7 +24,8 @@
                 "classmap": [
                     "./Sniffs.php"
                 ]
-            }
+            },
+            "time": "2018-09-04T19:20:03+00:00"
         }
     ],
     "packages-dev": [
@@ -80,9 +81,17 @@
             "time": "2020-01-10T04:04:04+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.1",
+            "alias_normalized": "0.1.0.0",
+            "version": "dev-",
+            "package": "codeclimate/codeclimate-phpcodesniffer"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "codeclimate/codeclimate-phpcodesniffer": 20,
         "squizlabs/php_codesniffer": 20
     },
     "prefer-stable": false,
