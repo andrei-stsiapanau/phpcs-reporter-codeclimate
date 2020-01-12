@@ -4,28 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793d369d243305a55f1f3156abddc79f",
+    "content-hash": "dd00dcc85bee248682afbda112aa8141",
     "packages": [
         {
             "name": "codeclimate/codeclimate-phpcodesniffer",
-            "version": "master",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:codeclimate/codeclimate-phpcodesniffer.git",
-                "reference": "master"
-            },
+            "version": "0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/codeclimate/codeclimate-phpcodesniffer/archive/master.zip",
-                "reference": "master"
+                "url": "https://github.com/codeclimate/codeclimate-phpcodesniffer/archive/master.zip"
             },
             "type": "library",
             "autoload": {
                 "classmap": [
                     "./Sniffs.php"
                 ]
-            },
-            "time": "2018-09-04T19:20:03+00:00"
+            }
         }
     ],
     "packages-dev": [
@@ -81,17 +74,9 @@
             "time": "2020-01-10T04:04:04+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "0.1",
-            "alias_normalized": "0.1.0.0",
-            "version": "9999999-dev",
-            "package": "codeclimate/codeclimate-phpcodesniffer"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "codeclimate/codeclimate-phpcodesniffer": 20,
         "squizlabs/php_codesniffer": 20
     },
     "prefer-stable": false,

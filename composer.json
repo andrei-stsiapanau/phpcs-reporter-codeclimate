@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "codeclimate/codeclimate-phpcodesniffer": "dev-master as 0.1"
+        "codeclimate/codeclimate-phpcodesniffer": "^0.1"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0@dev"
@@ -25,15 +25,10 @@
             "type": "package",
             "package": {
                 "name": "codeclimate/codeclimate-phpcodesniffer",
-                "version": "master",
+                "version": "0.1",
                 "dist": {
                     "url": "https://github.com/codeclimate/codeclimate-phpcodesniffer/archive/master.zip",
                     "type": "zip"
-                },
-                "source": {
-                    "url": "git@github.com:codeclimate/codeclimate-phpcodesniffer.git",
-                    "type": "git",
-                    "reference": "master"
                 },
                 "autoload": {
                     "classmap": [
