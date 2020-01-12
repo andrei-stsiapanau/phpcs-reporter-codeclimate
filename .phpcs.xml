@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="PHPCS CodeClimate reporter" namespace="PHP_CodeSniffer\Reports">
-    <arg name="report" value="\PHP_CodeSniffer\Reports\Codeclimate"/>
+    <arg name="report" value="codeclimate"/>
     <file>./source/Codeclimate.php</file>
     <autoload>vendor/autoload.php</autoload>
     <rule ref="PSR12"/>
