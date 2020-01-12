@@ -9,9 +9,9 @@
             "email": "andrew.stephanoff@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
-        "codeclimate/codeclimate-phpcodesniffer": "master"
+        "codeclimate/codeclimate-phpcodesniffer": "dev"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0@dev"
@@ -26,7 +26,7 @@
             "type": "package",
             "package": {
                 "name": "codeclimate/codeclimate-phpcodesniffer",
-                "version": "master",
+                "version": "dev",
                 "dist": {
                     "url": "https://github.com/codeclimate/codeclimate-phpcodesniffer/archive/master.zip",
                     "type": "zip"
@@ -43,5 +43,13 @@
                 }
             }
         }
-    ]
+    ],
+    "scripts": {
+        "post-update-cmd": [
+            "@php vendor/bin/phpcs --config-set installed_paths $PWD"
+        ],
+        "post-package-uninstall": [
+            "@php vendor/bin/phpcs --config-delete installed_paths $PWD"
+        ]
+    }
 }
